@@ -26,6 +26,10 @@ h1 {
     font-weight: 500;
 }
 
+.total {
+    font-weight: 600;
+}
+
 
 .ui-product-color {
     display: inline-block;

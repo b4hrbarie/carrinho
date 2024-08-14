@@ -10,6 +10,7 @@
     <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.1.1/dist/css/bootstrap.min.css'/>
 
     <script src='https://cdn.jsdelivr.net/npm/bootstrap@4.1.1/dist/js/bootstrap.bundle.min.js' defer></script>
+    <script src="./script/carrinho.js" defer></script>
 
 
     <title>Carrinho</title>
@@ -55,10 +56,10 @@
                                 </div>
                               </div>
                             </td>
-                            <td class="text-right font-weight-semibold align-middle p-4">R$57.55</td>
-                            <td class="align-middle"><input type="button" class="btn" value="-"><input type="text" class="text-center" value="2"><input type="button" class="btn" value="+"></td>
-                            <td class="text-right font-weight-semibold align-middle p-4">$115.1</td>
-                            <td class="text-center align-middle px-0"><a href="#" class="shop-tooltip close float-none text-danger" title="" data-original-title="Remove">×</a></td>
+                            <td class="text-right font-weight-semibold align-middle p-4">R$<span id="produto1Price">57,55</span></td>
+                            <td class="align-middle"><input type="button" class="btn" id="produto1Subtration" value="-"><input type="text" class="text-center" id="produto1qtd" value="2"><input type="button" class="btn" id="produto1Addition" value="+"></td>
+                            <td class="text-right font-weight-semibold align-middle p-4">R$ <span class="total" id="produto1TotalPrice"></span></td>
+                            <td class="text-center align-middle px-0"><a href="#" class="shop-tooltip close float-none text-danger" title="" data-original-title="Remove" id="deleteProduct1">×</a></td>
                           </tr>
                 
                           <tr>
@@ -77,10 +78,10 @@
                                 </div>
                               </div>
                             </td>
-                            <td class="text-right font-weight-semibold align-middle p-4">$1049.00</td>
-                            <td class="align-middle"><input type="button" class="btn" value="-"><input type="text" class="text-center" value="1"><input type="button" class="btn" value="+"></td>
-                            <td class="text-right font-weight-semibold align-middle p-4">$1049.00</td>
-                            <td class="text-center align-middle px-0"><a href="#" class="shop-tooltip close float-none text-danger" title="" data-original-title="Remove">×</a></td>
+                            <td class="text-right font-weight-semibold align-middle p-4">R$<span id="produto2Price">57,55</span></td>
+                            <td class="align-middle"><input type="button" class="btn" id="produto2Subtration" value="-"><input type="text" class="text-center" id="produto2qtd" value="2"><input type="button" class="btn" id="produto2Addition" value="+"></td>
+                            <td class="text-right font-weight-semibold align-middle p-4">R$ <span class="total" id="produto2TotalPrice"></span></td>
+                            <td class="text-center align-middle px-0"><a href="#" class="shop-tooltip close float-none text-danger" title="" data-original-title="Remove" id="deleteProduct1">×</a></td>
                           </tr>
                 
                           <tr>
@@ -95,10 +96,10 @@
                                 </div>
                               </div>
                             </td>
-                            <td class="text-right font-weight-semibold align-middle p-4">$20.55</td>
-                            <td class="align-middle"><input type="button" class="btn" value="-"><input type="text" class="text-center" value="2"><input type="button" class="btn" value="+"></td>
-                            <td class="text-right font-weight-semibold align-middle p-4">$20.55</td>
-                            <td class="text-center align-middle px-0"><a href="#" class="shop-tooltip close float-none text-danger" title="" data-original-title="Remove">×</a></td>
+                            <td class="text-right font-weight-semibold align-middle p-4">R$<span id="produto3Price">57,55</span></td>
+                            <td class="align-middle"><input type="button" class="btn" id="produto3Subtration" value="-"><input type="text" class="text-center" id="produto3qtd" value="2"><input type="button" class="btn" id="produto3Addition" value="+"></td>
+                            <td class="text-right font-weight-semibold align-middle p-4">R$ <span class="total" id="produto3TotalPrice"></span></td>
+                            <td class="text-center align-middle px-0"><a href="#" class="shop-tooltip close float-none text-danger" title="" data-original-title="Remove" id="deleteProduct3">×</a></td>
                           </tr>
                 
                         </tbody>
@@ -108,17 +109,17 @@
                 
                     <div class="d-flex flex-wrap justify-content-between align-items-center pb-4">
                       <div class="mt-4">
-                        <label class="text-muted font-weight-normal">Promocode</label>
+                        <label class="text-muted font-weight-normal">Código promocional</label>
                         <input type="text" placeholder="ABC" class="form-control">
                       </div>
                       <div class="d-flex">
                         <div class="text-right mt-4 mr-5">
-                          <label class="text-muted font-weight-normal m-0">Discount</label>
-                          <div class="text-large"><strong>$20</strong></div>
+                          <label class="text-muted font-weight-normal m-0">Desconto</label>
+                          <div class="text-large"><span id="discount">$20</span></div>
                         </div>
                         <div class="text-right mt-4">
-                          <label class="text-muted font-weight-normal m-0">Total price</label>
-                          <div class="text-large"><strong>$1164.65</strong></div>
+                          <label class="text-muted font-weight-normal m-0">Valor total</label>
+                          <div class="text-large"><span id="totalPriceOrder" class="total"></span></div>
                         </div>
                       </div>
                     </div>
