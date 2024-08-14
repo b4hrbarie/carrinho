@@ -1,0 +1,40 @@
+:root {
+    --cor-clara: #E6E4E5;
+    --cor-escura: #a6aec0;
+    --cor-destaq: #FEA02D;
+    --cor-fonte: #34363a;
+  }
+
+
+body{
+    margin-top:20px;
+    background:var(--cor-clara);
+    width: 100%;
+    height: 100%;
+}
+
+
+
+header, footer{
+    background: var(--cor-escura);
+    color: var(--cor-fonte);
+}
+
+.destaq {
+    color: var(--cor-destaq);
+}
+
+.btndestaq{
+   border: 5px solid var(--cor-destaq);
+   background: var(--cor-destaq);
+   color: white;
+   font-weight: 700; 
+}
+
+.btn {
+    border: 5px solid var(--cor-escura);
+    border-radius: 10px;
+    background: white;
+    color: var(--cor-escura);
+    font-weight: 700; 
+}
